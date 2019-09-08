@@ -78,7 +78,8 @@
             "html/libraries/{$name}" : [
                 "type:drupal-library",
                 "type:bower-asset",
-                "type:npm-asset"
+                "type:npm-asset",
+                "type:drupal-console-library"
             ],
             "html/modules/custom/{$name}": [
                 "drupal/wxt_library"
