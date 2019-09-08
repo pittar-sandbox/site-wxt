@@ -8946,12 +8946,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupalwxt/wxt.git",
-                "reference": "3bcd7b22300e3ca7c466ef8fd209423e231374e7"
+                "reference": "332ae1a9db2ef4b28354f624b7e62d002245abfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/3bcd7b22300e3ca7c466ef8fd209423e231374e7",
-                "reference": "3bcd7b22300e3ca7c466ef8fd209423e231374e7",
+                "url": "https://api.github.com/repos/drupalwxt/wxt/zipball/332ae1a9db2ef4b28354f624b7e62d002245abfe",
+                "reference": "332ae1a9db2ef4b28354f624b7e62d002245abfe",
                 "shasum": ""
             },
             "require": {
@@ -9155,7 +9155,7 @@
                 "GPL-2.0+"
             ],
             "description": "Project template for Drupal 8 sites built with the WxT distribution.",
-            "time": "2019-09-08T05:39:19+00:00"
+            "time": "2019-09-08T16:40:10+00:00"
         },
         {
             "name": "drush/drush",
@@ -10039,8 +10039,8 @@
             "authors": [
                 {
                     "name": "Luís Otávio Cobucci Oblonczyk",
-                    "role": "Developer",
-                    "email": "lcobucci@gmail.com"
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
                 }
             ],
             "description": "A simple library to work with JSON Web Token and JSON Web Signature",
