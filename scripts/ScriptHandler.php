@@ -46,25 +46,25 @@ class ScriptHandler {
     }
 
     // Prepare the settings file for installation.
-    if (!$fs->exists($root . '/sites/default/settings.php') and $fs->exists($root . '/sites/default/default.settings.php')) {
-      $fs->copy($root . '/sites/default/default.settings.php', $root . '/sites/default/settings.php');
-      $fs->chmod($root . '/sites/default/settings.php', 0666);
-      $event->getIO()->write("Create a sites/default/settings.php file with chmod 0666");
+    if (!$fs->exists($root . '/tempsite/default/settings.php') and $fs->exists($root . '/tempsite/default/default.settings.php')) {
+      $fs->copy($root . '/tempsite/default/default.settings.php', $root . '/tempsite/default/settings.php');
+      $fs->chmod($root . '/tempsite/default/settings.php', 0666);
+      $event->getIO()->write("Create a tempsite/default/settings.php file with chmod 0666");
     }
 
     // Prepare the services file for installation.
-    if (!$fs->exists($root . '/sites/default/services.yml') and $fs->exists($root . '/sites/default/default.services.yml')) {
-      $fs->copy($root . '/sites/default/default.services.yml', $root . '/sites/default/services.yml');
-      $fs->chmod($root . '/sites/default/services.yml', 0666);
-      $event->getIO()->write("Create a sites/default/services.yml file with chmod 0666");
+    if (!$fs->exists($root . '/tempsite/default/services.yml') and $fs->exists($root . '/tempsite/default/default.services.yml')) {
+      $fs->copy($root . '/tempsite/default/default.services.yml', $root . '/tempsite/default/services.yml');
+      $fs->chmod($root . '/tempsite/default/services.yml', 0666);
+      $event->getIO()->write("Create a tempsite/default/services.yml file with chmod 0666");
     }
 
     // Create the files directory with chmod 0777.
-    if (!$fs->exists($root . '/sites/default/files')) {
+    if (!$fs->exists($root . '/tempsite/default/files')) {
       $oldmask = umask(0);
-      $fs->mkdir($root . '/sites/default/files', 0777);
+      $fs->mkdir($root . '/tempsite/default/files', 0777);
       umask($oldmask);
-      $event->getIO()->write("Create a sites/default/files directory with chmod 0777");
+      $event->getIO()->write("Create a tempsite/default/files directory with chmod 0777");
     }
 
     // Rename Chosen to minified asset.
@@ -129,6 +129,48 @@ class ScriptHandler {
         $executor->execute('npm run deploy-libraries', $output, $wxt);
       }
     }
+      
+    $fs = new Filesystem();
+    $root = static::getDrupalRoot(getcwd());
+    $dirs = [
+      'tempsite',
+      'tempsite/default'
+    ];
+
+    // Required for unit testing.
+    foreach ($dirs as $dir) {
+      if (!$fs->exists($root . '/' . $dir)) {
+        $fs->mkdir($root . '/' . $dir);
+      }
+    }
+
+    // Prepare the settings file for installation.
+    if (!$fs->exists($root . '/tempsite/default/default.settings.php') and $fs->exists($root . '/sites/default/default.settings.php')) {
+      $fs->copy($root . '/sites/default/default.settings.php', $root . '/tempsite/default/default.settings.php');
+      //$fs->chmod($root . '/sites/default/settings.php', 0666);
+      $event->getIO()->write("Create a tempsite/default/default.settings.php file");
+    }
+
+    // Prepare the example file for installation.
+    if (!$fs->exists($root . '/tempsite/example.sites.php') and $fs->exists($root . '/sites/example.sites.php')) {
+      $fs->copy($root . '/sites/example.sites.php', $root . '/tempsite/example.sites.php');
+      $event->getIO()->write("Create a tempsite/example.sites.php file");
+    }
+
+    // Prepare the services file for installation.
+    if (!$fs->exists($root . '/tempsite/default/default.services.yml') and $fs->exists($root . '/sites/default/default.services.yml')) {
+      $fs->copy($root . '/sites/default/default.services.yml', $root . '/tempsite/default/default.services.yml');
+      //$fs->chmod($root . '/sites/default/services.yml', 0666);
+      $event->getIO()->write("Create a tempsite/default/services.yml file");
+    }
+
+    // Create the files directory with chmod 0777.
+    if (!$fs->exists($root . '/tempsite/default/files')) {
+      $oldmask = umask(0);
+      $fs->mkdir($root . '/tempsite/default/files', 0777);
+      umask($oldmask);
+      $event->getIO()->write("Create a tempsite/default/files directory with chmod 0777");
+    }
   }
 
   /**
@@ -159,6 +201,48 @@ class ScriptHandler {
       }
     }
 
+    $fs = new Filesystem();
+    $root = static::getDrupalRoot(getcwd());
+    $dirs = [
+      'tempsite',
+      'tempsite/default'
+    ];
+
+    // Required for unit testing.
+    foreach ($dirs as $dir) {
+      if (!$fs->exists($root . '/' . $dir)) {
+        $fs->mkdir($root . '/' . $dir);
+      }
+    }
+
+    // Prepare the settings file for installation.
+    if (!$fs->exists($root . '/tempsite/default/default.settings.php') and $fs->exists($root . '/sites/default/default.settings.php')) {
+      $fs->copy($root . '/sites/default/default.settings.php', $root . '/tempsite/default/default.settings.php');
+      //$fs->chmod($root . '/sites/default/settings.php', 0666);
+      $event->getIO()->write("Create a tempsite/default/default.settings.php file");
+    }
+
+    // Prepare the example file for installation.
+    if (!$fs->exists($root . '/tempsite/example.sites.php') and $fs->exists($root . '/sites/example.sites.php')) {
+      $fs->copy($root . '/sites/example.sites.php', $root . '/tempsite/example.sites.php');
+      $event->getIO()->write("Create a tempsite/example.sites.php file");
+    }
+
+    // Prepare the services file for installation.
+    if (!$fs->exists($root . '/tempsite/default/default.services.yml') and $fs->exists($root . '/sites/default/default.services.yml')) {
+      $fs->copy($root . '/sites/default/default.services.yml', $root . '/tempsite/default/default.services.yml');
+      //$fs->chmod($root . '/sites/default/services.yml', 0666);
+      $event->getIO()->write("Create a tempsite/default/services.yml file");
+    }
+
+    // Create the files directory with chmod 0777.
+    if (!$fs->exists($root . '/tempsite/default/files')) {
+      $oldmask = umask(0);
+      $fs->mkdir($root . '/tempsite/default/files', 0777);
+      umask($oldmask);
+      $event->getIO()->write("Create a tempsite/default/files directory with chmod 0777");
+    }
+      
   }
 
 }
