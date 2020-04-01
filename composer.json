@@ -48,6 +48,12 @@
         }
     ],
     "scripts": {
+        "post-install-cmd": [
+            "DrupalWxT\\WxT\\ScriptHandler::stashConfigs"
+        ],
+        "post-update-cmd": [
+            "DrupalWxT\\WxT\\ScriptHandler::stashConfigs"
+        ],
         "post-create-project-cmd": "rm -r -f .travis.yml behat.yml .travis-ci",
         "quick-start": [
             "composer install"
