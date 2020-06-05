@@ -36,11 +36,8 @@ bower_components/
 **/sass/*.css
 
 # Custom
-<<<<<<< HEAD
-docker/conf/console
+docker
 .project
 .settings
 .buildpath
-=======
-docker
->>>>>>> 8.x
+
