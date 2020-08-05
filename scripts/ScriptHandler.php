@@ -182,6 +182,11 @@ class ScriptHandler {
   public static function stashConfigs(Event $event) {
       $fs = new Filesystem();
       $root = static::getDrupalRoot(getcwd());
+      $src = dirname($root);
+
+      if ($fs->exists("$src/vendor/ised/remote-manage/manage.php")) {
+        $fs->symlink("$src/vendor/ised/remote-manage/manage.php", "$root/manage.php");
+      }
 
       // Prepare the settings file for installation.
       if (!$fs->exists($root . '/tempsite/default/default.settings.php') and $fs->exists($root . '/sites/default/default.settings.php')) {

@@ -45,6 +45,19 @@
         {
             "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ised/remote-manage",
+                "version": "1.0",
+                "type": "library",
+                "source": {
+                    "url": "https://github.com/ised-isde-canada/remote-manage.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "scripts": {
@@ -124,7 +137,8 @@
         "drupal/core-composer-scaffold": "*",
         "drush/drush": "^9.0",
         "drupalwxt/wxt": "dev-8.x-3.x",
-        "drupal/health_check": "^1.2"
+        "drupal/health_check": "^1.2",
+        "ised/remote-manage": "^1.0"
     },
     "autoload": {
         "classmap": [
