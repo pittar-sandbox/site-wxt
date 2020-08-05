@@ -1,4 +1,4 @@
-FROM registry.apps.dev.openshift.ised-isde.canada.ca/ised-ci/sclorg-s2i-php@sha256:e734a980061495b1093a47f526ed7e9c35a5667d799401f0f91d1b4aee1ffb93
+FROM registry.apps.dev.openshift.ised-isde.canada.ca/ised-ci/sclorg-s2i-php:7.3 _
 
 USER root
 
