@@ -34,6 +34,10 @@ USER 1001
 RUN ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
 USER root
 
+RUN mkdir -p /opt/app-root/src/data/sites && \
+    rm -rf /opt/app-root/src/html/sites && \
+    ln -s /opt/app-root/src/html/sites /opt/app-root/src/data
+
 RUN chgrp -R 0 /opt/app-root/src && \
     chmod -R g=u+wx /opt/app-root/src && \
     chgrp -R 0 /run/httpd && \ 
