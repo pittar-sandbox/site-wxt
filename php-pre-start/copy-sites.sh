@@ -5,5 +5,13 @@ then
     echo "Data exists, skip copying default data."
 else
     echo "Data dir empty.  Copy default data."
-    cp -R /opt/app-root/src/html/tempsite/* /opt/app-root/src/html/sites
+    if [ -d /opt/app-root/src/data ]
+    then
+        if [ ! -d /opt/app-root/src/data/sites ]
+        then
+            mkdir /opt/app-root/src/data/sites
+        fi
+    else
+        cp -R /opt/app-root/src/html/tempsite/* /opt/app-root/src/html/sites
+    fi
 fi
