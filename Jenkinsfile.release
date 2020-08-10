@@ -11,7 +11,7 @@ pipeline {
 
        environment {
         // GLobal Vars
-        IMAGE_NAME = "ciodrcoe-epic-drupal-wxt"
+        IMAGE_NAME = "drupal-wxt"
     }
 
     stages {
