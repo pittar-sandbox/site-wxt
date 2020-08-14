@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1d819dcd3769c50721837a7e6c6d1957",
+    "content-hash": "effe1c949a8f53a99980f1047c463107",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -278,7 +278,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/fengyuanchen/cropper/zipball/30c58b29ee21010e17e58ebab165fbd84285c685",
-                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
+                "reference": "30c58b29ee21010e17e58ebab165fbd84285c685",
+                "shasum": null
             },
             "type": "bower-asset",
             "license": [
@@ -296,7 +297,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/enyo/dropzone/zipball/b2a50bc61c55ff4f22663a6754020d967305c973",
-                "reference": "b2a50bc61c55ff4f22663a6754020d967305c973"
+                "reference": "b2a50bc61c55ff4f22663a6754020d967305c973",
+                "shasum": null
             },
             "type": "bower-asset"
         },
@@ -305,13 +307,14 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/4c0e4becb8263bb5b3e6dadc448d8e7305ef8215",
-                "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
+                "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215",
+                "shasum": null
             },
             "type": "bower-asset",
             "license": [
@@ -329,7 +332,8 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/kenwheeler/slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
+                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
+                "shasum": null
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -11368,6 +11372,68 @@
             "time": "2020-06-27T10:12:23+00:00"
         },
         {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0",
+                "reference": "2c2370ba3df7034f9eb7b8f387c97b52b2ba5ad0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "doctrine/annotations": "^1.2",
+                "friendsofphp/php-cs-fixer": "^2.2",
+                "phpunit/phpunit": "^4.8 || ^5.7"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "time": "2020-07-14T18:50:27+00:00"
+        },
+        {
             "name": "psr/cache",
             "version": "1.0.1",
             "source": {
@@ -13979,7 +14045,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz",
-                "reference": "1.16"
+                "reference": "1.16",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14129,7 +14196,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz",
-                "reference": "v4.0.27-theme-base"
+                "reference": "v4.0.27-theme-base",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14144,7 +14212,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz",
-                "reference": "v4.0.27-theme-gc-intranet"
+                "reference": "v4.0.27-theme-gc-intranet",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14159,7 +14228,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v6.1-gcweb.tar.gz",
-                "reference": "v6.1-gcweb"
+                "reference": "v6.1-gcweb",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14174,7 +14244,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz",
-                "reference": "v4.0.29-gcweb"
+                "reference": "v4.0.29-gcweb",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14189,7 +14260,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz",
-                "reference": "v4.0.27-theme-gcwu-fegc"
+                "reference": "v4.0.27-theme-gcwu-fegc",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14204,7 +14276,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz",
-                "reference": "v4.0.27-theme-ogpl"
+                "reference": "v4.0.27-theme-ogpl",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14219,7 +14292,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.35-theme-wet-boew.tar.gz",
-                "reference": "v4.0.35-theme-wet-boew"
+                "reference": "v4.0.35-theme-wet-boew",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -14234,7 +14308,8 @@
             "dist": {
                 "type": "tar",
                 "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.35.tar.gz",
-                "reference": "v4.0.35"
+                "reference": "v4.0.35",
+                "shasum": null
             },
             "type": "drupal-library"
         },
@@ -18156,6 +18231,5 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": [],
-    "plugin-api-version": "1.1.0"
+    "platform-dev": []
 }
