@@ -9,3 +9,7 @@ else
     fi
     cp -R /opt/app-root/src/html/tempsite/* /opt/app-root/src/html/sites
 fi
+
+if [ ! -d /opt/app-root/src/data/config ]; then
+    mkdir -p /opt/app-root/src/data/config/sync
+fi
