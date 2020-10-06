@@ -2,7 +2,7 @@
 
 pipeline {
     agent {
-        label 'nodejs-test'
+        label 'php-7.3'
     }
 
     options {
