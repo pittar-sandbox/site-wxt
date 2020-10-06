@@ -1,0 +1,28 @@
+@Library('ised-cicd-lib') _
+
+pipeline {
+    agent {
+        label 'nodejs-test'
+    }
+
+    options {
+        disableConcurrentBuilds()
+    }
+
+    environment {
+        // GLobal Vars
+        IMAGE_NAME = "drupal-wxt"
+    }
+
+    stages {
+        stage('build-backend') {
+            steps {
+			    dir("${BACKEND_DIR}") {
+                    script {
+                        metrics.sonarScan("CIODRCOE-site-wxt", ".")
+                    }
+                }
+            }
+        }
+    }
+}
