@@ -1,4 +1,4 @@
-@Library('ised-cicd-lib') _
+@Library('ised-cicd-lib@enableExperimental') _
 
 pipeline {
     agent {
@@ -16,7 +16,7 @@ pipeline {
     }
 
     stages {
-        stage('build-backend') {
+        stage('analyze') {
             steps {
                 script {
                     //metrics.sonarScan("CIODRCOE-site-wxt", ".")
