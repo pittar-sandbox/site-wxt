@@ -2,7 +2,8 @@
 
 pipeline {
     agent {
-        label 'php-7.3'
+        //label 'php-7.3'
+        label 'maven'
     }
 
     options {
@@ -18,7 +19,8 @@ pipeline {
         stage('build-backend') {
             steps {
                 script {
-                    metrics.sonarScan("CIODRCOE-site-wxt", ".")
+                    //metrics.sonarScan("CIODRCOE-site-wxt", ".")
+                    metrics.runCodeCoverage()
                 }
             }
         }
