@@ -1,4 +1,4 @@
-@Library('ised-cicd-lib@enableExperimental') _
+@Library('ised-cicd-lib') _
 
 pipeline {
     agent {
