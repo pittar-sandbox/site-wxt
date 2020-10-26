@@ -31,7 +31,8 @@ RUN chgrp -R 0 /opt/app-root/src && \
 
 #do not run composer as root, according to the documentation
 USER 1001
-RUN ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
+RUN ./composer.phar clearcache && \
+    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
 USER root
 
 RUN mkdir -p /opt/app-root/src/data/sites && \
