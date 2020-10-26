@@ -12,7 +12,7 @@ RUN yum update -y && \
     yum reinstall -y glibc-common && \
     yum clean all
 
-ENV COMPOSER_FILE=composer-installer \
+ENV COMPOSER_FILE=composer-installer --version=1.10.15 \
     DOCUMENTROOT=/html
 
 RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
