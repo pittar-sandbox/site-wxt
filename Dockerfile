@@ -8,8 +8,8 @@ RUN yum update -y && \
     yum clean all && \
     yum install -y php-xmlrpc && \
     yum install -y php-zip && \
-#    yum install -y langpacks-fr  && \
-#    yum reinstall -y --allowerasing glibc-common && \
+    yum install -y langpacks-fr  && \
+    yum reinstall -y --allowerasing glibc-common && \
     yum clean all
 
 ENV COMPOSER_FILE=composer-installer \
