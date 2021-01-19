@@ -2,16 +2,6 @@ FROM registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/sclorg-s2i-php:7.3
 
 USER root
 
-# Update the image with the latest packages (recommended), then
-# Install php-xmlrpc module from RHSCL repo, remove override_install_langs so all locales can be installed, install glibc-common for all locales (locale -a)
-#RUN yum update -y && \
-#    yum clean all && \
-#    yum install -y php-xmlrpc && \
-#    yum install -y php-zip && \
-#    yum install -y langpacks-fr  && \
-#    yum reinstall -y --allowerasing glibc-common && \
-#    yum clean all
-
 ENV COMPOSER_FILE=composer-installer \
     DOCUMENTROOT=/html
 
@@ -29,7 +19,7 @@ WORKDIR /opt/app-root/src
 RUN chgrp -R 0 /opt/app-root/src && \
     chmod -R g=u+wx /opt/app-root/src
 
-#do not run composer as root, according to the documentation
+# Do not run composer as root
 USER 1001
 RUN ./composer.phar clearcache && \
     ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
