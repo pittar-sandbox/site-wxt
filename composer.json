@@ -27,10 +27,12 @@
             "if [ -d html/sites/default ]; then chmod 775 html/sites/default; fi"
         ],
         "post-install-cmd": [
-            "bash post_install.sh"
+            "bash post_install.sh",
+            "DrupalWxT\\WxT\\ScriptHandler::stashConfigs"
         ],
         "post-update-cmd": [
-            "bash post_install.sh"
+            "bash post_install.sh",
+            "DrupalWxT\\WxT\\ScriptHandler::stashConfigs"
         ],
         "quick-start": [
             "composer install"

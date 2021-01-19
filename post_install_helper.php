@@ -1,6 +1,7 @@
 #!/usr/bin/env php
 <?php
 
+# TODO: Describe what this does and how to use it.
 
 // Argument handling from command line and from web browser.
 foreach ($argv as $arg) {
