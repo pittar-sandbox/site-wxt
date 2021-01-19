@@ -1,40 +1,10 @@
 {
-    "name": "drupalwxt/site-wxt",
-    "description": "Project template for Drupal 8 sites built with the WxT distribution.",
+    "name": "ised-isde/ised-cms",
+    "description": "Project for ISED Drupal CMS",
     "type": "project",
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "require": {
-        "cweagans/composer-patches": "^1.6.0",
-        "drupal/core-composer-scaffold": "*",
-        "drupalwxt/wxt": "dev-8.x-3.x",
-        "drush/drush": "^9.0",
-        "oomphinc/composer-installers-extender": "^1.1 || ^2",
-        "drupal/health_check": "^1.2",
-        "ised/remote-manage": "^1.0",
-        "phpmailer/phpmailer": "^6.1",
-        "drupal/keycloak": "^1.3",
-        "drupal/openid_connect": "^1.0@RC",
-        "drupal/mailsystem": "^4.3",
-        "drupal/phpmailer_smtp": "^2.0",
-        "nodespark/des-connector": "dev-master",
-        "lusitanian/oauth": "^0.8.11"
-    },
-    "require-dev": {
-        "drupal/core-dev": "^8.8",
-        "drupal/console": "~1.9.0",
-        "drupal/console-extend-plugin": "dev-master as 0.9.4",
-        "drupal/drupal-extension": "~3.4.0",
-        "squizlabs/php_codesniffer": "^3.3"
-    },
-    "config": {
-        "secure-http": false,
-        "prestissimo": {
-            "maxConnections": 10,
-            "minConnections": 5
-        }
-    },
     "repositories": [
         {
             "type": "composer",
@@ -47,33 +17,21 @@
         {
             "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/ossobuffo/drupal-console-extend-plugin.git"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "ised/remote-manage",
-                "version": "1.0",
-                "type": "library",
-                "source": {
-                    "url": "https://github.com/ised-isde-canada/remote-manage.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
         }
     ],
     "scripts": {
+        "post-root-package-install": [
+            "DrupalWxT\\WxT\\ScriptHandler::postCreateProject"
+        ],
+        "pre-install-cmd": [
+            "if [ -d html/sites/default ]; then chmod 775 html/sites/default; fi"
+        ],
         "post-install-cmd": [
-            "DrupalWxT\\WxT\\ScriptHandler::stashConfigs"
+            "bash post_install.sh"
         ],
         "post-update-cmd": [
-            "DrupalWxT\\WxT\\ScriptHandler::stashConfigs"
+            "bash post_install.sh"
         ],
-        "post-create-project-cmd": "rm -r -f .travis.yml behat.yml .travis-ci",
         "quick-start": [
             "composer install"
         ]
@@ -85,24 +43,34 @@
             }
         },
         "installer-types": [
-            "bower-asset",
-            "npm-asset"
+          "bower-asset",
+          "npm-asset",
+          "custom-module",
+          "custom-theme"
         ],
         "installer-paths": {
             "html/core": [
                 "type:drupal-core"
             ],
-            "html/libraries/{$name}": [
+            "html/libraries/{$name}" : [
                 "type:drupal-console-library",
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset"
+            ],
+            "html/modules/custom/{$name}": [
+                "drupal/wxt_library",
+                "type:drupal-custom-module"
             ],
             "html/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
             "html/profiles/{$name}": [
                 "type:drupal-profile"
+            ],
+            "html/themes/custom/{$name}": [
+                "drupal/wxt_bootstrap",
+                "type:drupal-custom-theme"
             ],
             "html/themes/contrib/{$name}": [
                 "type:drupal-theme"
@@ -111,12 +79,11 @@
                 "type:drupal-drush"
             ]
         },
-        "composer-exit-on-patch-failure": true,
+        "composer-exit-on-patch-failure": false,
         "enable-patching": true,
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "patches": { },
         "patches-ignore": {
             "acquia/lightning": {
                 "drupal/core": {
@@ -135,6 +102,11 @@
                 }
             }
         }
+    },
+    "require": {
+        "entreprise7pro/dxbase": "3.0.0-alpha4",
+        "drupal/linkit": "6.0-beta2 as 5.0-beta11",
+        "dsutter/remote-manage": "dev-master"
     },
     "autoload": {
         "classmap": [
