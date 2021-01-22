@@ -1,4 +1,4 @@
-Composer Project template for ISED Drupal
+ISED SCMS Publications Catalogue Project
 =========================================
 
 
