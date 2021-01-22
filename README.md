@@ -1,6 +1,6 @@
 Composer Project template for Drupal WxT
 ========================================
-
+ 
 [![Build Status][githubci-badge]][githubci]
 
 [Drupal WxT][wxt] codebase for `site-wxt`.
