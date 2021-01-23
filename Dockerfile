@@ -3,7 +3,14 @@ FROM registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/sclorg-s2i-php:7.3
 USER root
 
 ENV COMPOSER_FILE=composer-installer \
-    DOCUMENTROOT=/html
+    DOCUMENTROOT=/html \
+    PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/app-root/src/vendor/bin \
+    COMPOSER_MEMORY_LIMIT=-1 \
+    POSTGRESQL_USER=postgres \
+    POSTGRESQL_PASSWORD=postgres \ 
+    POSTGRESQL_DATABASE=postgres \
+    DB_USERNAME=d8user \
+    DB_PASSWORD=d8pass
 
 RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
     php $COMPOSER_FILE --version=2.0.8
@@ -16,10 +23,11 @@ COPY / /opt/app-root/src
 
 WORKDIR /opt/app-root/src
 
-RUN chgrp -R 0 /opt/app-root/src && \
+RUN chgrp -R 1001 /opt/app-root/src && \
+    chown -R 1001 /opt/app-root/src && \
     chmod -R g=u+wx /opt/app-root/src
 
-# Do not run composer as root
+# Do not run composer as root  
 USER 1001
 RUN ./composer.phar clearcache && \
     ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
@@ -29,7 +37,8 @@ RUN mkdir -p /opt/app-root/src/data/sites && \
     rm -rf /opt/app-root/src/html/sites && \
     ln -s /opt/app-root/src/data/sites /opt/app-root/src/html/sites
 
-RUN chgrp -R 0 /opt/app-root/src && \
+RUN chgrp -R 1001 /opt/app-root/src && \
+    chown -R default /opt/app-root/src && \
     chmod -R g=u+wx /opt/app-root/src && \
     chgrp -R 0 /run/httpd && \ 
     chmod -R g=u /run/httpd
