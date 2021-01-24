@@ -4,7 +4,7 @@ services:
   drupal:
     build:
       context: .
-      dockerfile: dockerfiles/scms-publications-drupal.dockerfile 
+      dockerfile: ./Dockerfile 
     container_name: scmspc-drupal
     ports:
       - 8080:8080
