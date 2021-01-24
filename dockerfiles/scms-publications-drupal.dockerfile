@@ -3,14 +3,7 @@ FROM registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/sclorg-s2i-php:7.3
 USER root
 
 ENV COMPOSER_FILE=composer-installer \
-    DOCUMENTROOT=/html \
-    PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/app-root/src/vendor/bin \
-    COMPOSER_MEMORY_LIMIT=-1 \
-    POSTGRESQL_USER=postgres \
-    POSTGRESQL_PASSWORD=postgres \ 
-    POSTGRESQL_DATABASE=postgres \
-    DB_USERNAME=d8user \
-    DB_PASSWORD=d8pass
+    DOCUMENTROOT=/html
 
 RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
     php $COMPOSER_FILE --version=2.0.8
