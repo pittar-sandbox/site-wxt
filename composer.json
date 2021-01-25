@@ -107,11 +107,16 @@
     },
     "require": {
         "ised-isde/drupal-base": "dev-main",
-        "drupal/linkit": "6.0-beta2 as 5.0-beta11"
+        "drupal/linkit": "6.0-beta2 as 5.0-beta11",
+        "steve.mcnabb/ised_publications_module": "dev-main",
+        "drupal/field_permissions": "^1.1"
     },
     "autoload": {
         "classmap": [
             "scripts/ScriptHandler.php"
         ]
+    },
+    "require-dev": {
+        "drupal/css_editor": "^1.2"
     }
 }

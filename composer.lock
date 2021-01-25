@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42bca75aedfe22c0d537f4e74b392957",
+    "content-hash": "01980cfca13ff6565719136ae8d5665b",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -6647,6 +6647,70 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group",
                 "issues": "https://www.drupal.org/project/issues/field_group"
+            }
+        },
+        {
+            "name": "drupal/field_permissions",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_permissions.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_permissions-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "11e31db94999e6871ad7633455315bc27989a7ea"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1598646882",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "branch-alias": {
+                    "dev-8.x-1.x": "1.x-dev"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                },
+                {
+                    "name": "japerry",
+                    "homepage": "https://www.drupal.org/user/45640"
+                },
+                {
+                    "name": "jhedstrom",
+                    "homepage": "https://www.drupal.org/user/208732"
+                },
+                {
+                    "name": "mariacha1",
+                    "homepage": "https://www.drupal.org/user/2210776"
+                },
+                {
+                    "name": "markus_petrux",
+                    "homepage": "https://www.drupal.org/user/39593"
+                }
+            ],
+            "description": "The Field Permissions module allows site administrators to set field-level permissions to edit, view and create fields on any entity.",
+            "homepage": "https://www.drupal.org/project/field_permissions",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_permissions",
+                "issues": "https://www.drupal.org/project/issues/field_permissions"
             }
         },
         {
@@ -17247,6 +17311,39 @@
             "time": "2019-11-24T17:03:06+00:00"
         },
         {
+            "name": "steve.mcnabb/ised_publications_module",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stevemcnabb/ised_publications_module.git",
+                "reference": "8f3f4988e1e442afd07671e388fa844a6620c3a4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stevemcnabb/ised_publications_module/zipball/8f3f4988e1e442afd07671e388fa844a6620c3a4",
+                "reference": "8f3f4988e1e442afd07671e388fa844a6620c3a4",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "project",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McNabb",
+                    "email": "steve.mcnabb@canada.ca"
+                }
+            ],
+            "description": "ISED Publications Module",
+            "support": {
+                "issues": "https://github.com/stevemcnabb/ised_publications_module/issues",
+                "source": "https://github.com/stevemcnabb/ised_publications_module/tree/main"
+            },
+            "time": "2021-01-25T18:44:21+00:00"
+        },
+        {
             "name": "swagger-api/swagger-ui",
             "version": "v3.40.0",
             "source": {
@@ -20476,7 +20573,64 @@
             "time": "2018-08-28T21:34:05+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "drupal/css_editor",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/css_editor.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/css_editor-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "e7e54ec3781420ead909e51a8864174a253fce26"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1510935485",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "caiosba",
+                    "homepage": "https://www.drupal.org/user/1774198"
+                },
+                {
+                    "name": "encelado",
+                    "homepage": "https://www.drupal.org/user/701446"
+                },
+                {
+                    "name": "infojunkie",
+                    "homepage": "https://www.drupal.org/user/48424"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                }
+            ],
+            "description": "Customize your CSS directly from the browser.",
+            "homepage": "https://www.drupal.org/project/css_editor",
+            "support": {
+                "source": "https://git.drupalcode.org/project/css_editor"
+            }
+        }
+    ],
     "aliases": [
         {
             "package": "drupal/linkit",
@@ -20487,7 +20641,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ised-isde/drupal-base": 20
+        "ised-isde/drupal-base": 20,
+        "steve.mcnabb/ised_publications_module": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
