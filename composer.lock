@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "42bca75aedfe22c0d537f4e74b392957",
+    "content-hash": "f7cd5c155d2aa441146027dfd3b95013",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -13957,6 +13957,16 @@
                 }
             ],
             "time": "2020-11-11T04:36:51+00:00"
+        },
+        {
+            "name": "dsutter/epic_import",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://scm.ised-isde.canada.ca/scm/~duncan.sutter_canada.ca/epic_import.git",
+                "reference": "master"
+            },
+            "type": "drupal-module"
         },
         {
             "name": "easyrdf/easyrdf",
