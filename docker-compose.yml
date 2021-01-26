@@ -11,6 +11,7 @@ services:
     volumes:
     # For local development, you can map a local directory to the image instead of using the volume
     #  - <your local dev directory>:/opt/app-root/src/data/sites/default/
+      - /Users/stv/Desktop/InProgress/ISED/workspace/scmspc/ised_publications_module:/opt/app-root/src/data/sites/default/modules/ised/ised_publications_module
       - scmspc-drupal-data:/opt/app-root/src/data
     env_file:
       - .env

@@ -1,12 +1,26 @@
+FROM composer as builder
+RUN git config --global url."https://github.com/".insteadOf git@github.com:
+
+
+
 FROM registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/sclorg-s2i-php:7.3
 
+
 USER root
+COPY --from=builder /usr/bin/composer /usr/bin/composer
+COPY composer.* ./
 
-ENV COMPOSER_FILE=composer-installer \
-    DOCUMENTROOT=/html
 
-RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
-    php $COMPOSER_FILE --version=2.0.8
+#ENV COMPOSER_FILE=composer-installer \
+#    
+ENV DOCUMENTROOT=/html \
+  PATH=/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/app-root/src/vendor/bin \
+  COMPOSER_MEMORY_LIMIT=-1
+  
+ 
+
+#RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
+#    php $COMPOSER_FILE --version=2.0.8
 
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
     yum --disablerepo=rhel-8-for-x86_64-appstream-rpms install -y postgresql12 && \
@@ -22,8 +36,11 @@ RUN chgrp -R 1001 /opt/app-root/src && \
 
 # Do not run composer as root  
 USER 1001
-RUN ./composer.phar clearcache && \
-    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
+
+#RUN ./composer.phar clearcache && \
+#    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
+RUN /usr/bin/composer clearcache && composer install --no-interaction --no-ansi --optimize-autoloader
+
 USER root
 
 RUN mkdir -p /opt/app-root/src/data/sites && \
@@ -37,5 +54,7 @@ RUN chgrp -R 1001 /opt/app-root/src && \
     chmod -R g=u /run/httpd
 
 USER 1001
+
+
 
 ENTRYPOINT ["bin/run"]
