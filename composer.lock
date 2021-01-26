@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01980cfca13ff6565719136ae8d5665b",
+    "content-hash": "36c60421f279691af693c4463a63fe6e",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -8797,17 +8797,17 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.19.0",
+            "version": "3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.19"
+                "reference": "8.x-3.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.19.zip",
-                "reference": "8.x-3.19",
-                "shasum": "b9909e935eb8f72c993d23548c732324636b774f"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.20.zip",
+                "reference": "8.x-3.20",
+                "shasum": "ce1b51f8a60b924382800598b4ff90ae4680936c"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -8824,7 +8824,7 @@
                 "drupal/libraries": "^3.0-alpha6",
                 "drupal/lightning_core": "3.* || 4.* || 5.*",
                 "drupal/media_entity_instagram": "^3",
-                "drupal/media_entity_twitter": "^2.1",
+                "drupal/media_entity_twitter": "^2.5",
                 "drupal/slick": "^2.0",
                 "drupal/slick_entityreference": "^2.0",
                 "drupal/video_embed_field": "^2.0",
@@ -8851,8 +8851,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.19",
-                    "datestamp": "1608315533",
+                    "version": "8.x-3.20",
+                    "datestamp": "1611678912",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14918,12 +14918,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base.git",
-                "reference": "8819e405c3d0c38b112b4d357bf679d384439eed"
+                "reference": "846eba17a2b67455779567c9a142a764709cfd44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/8819e405c3d0c38b112b4d357bf679d384439eed",
-                "reference": "8819e405c3d0c38b112b4d357bf679d384439eed",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/846eba17a2b67455779567c9a142a764709cfd44",
+                "reference": "846eba17a2b67455779567c9a142a764709cfd44",
                 "shasum": ""
             },
             "require": {
@@ -15072,6 +15072,7 @@
                 },
                 "patches": {
                     "drupal/core": {
+                        "Big pipe patch": "https://www.drupal.org/files/issues/2021-01-24/3194462.patch",
                         "Node previews are cached by dynamic page cache": "https://www.drupal.org/files/issues/2020-04-13/d8_node_preview.patch",
                         "file usage bug fixes": "https://www.drupal.org/files/issues/2020-04-03/2810355-64.patch",
                         "core views module fix for breadcrumb title and page title": "https://www.drupal.org/files/issues/2020-08-06/2716019-99-d88x.patch",
@@ -15103,7 +15104,7 @@
                         "Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2020-10-20/3115158-6.patch"
                     },
                     "drupal/linkit": {
-                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-14/3078075-22.patch"
+                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-25/3078075-24_0.patch"
                     },
                     "drupal/lightning_media": {
                         "Bulk media upload should have an option to select the target media entity bundle": "https://www.drupal.org/files/issues/2019-11-29/lightning_bulk_upload_form-3097516-2.patch"
@@ -15159,7 +15160,7 @@
                 "issues": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/issues",
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
-            "time": "2021-01-22T16:08:56+00:00"
+            "time": "2021-01-26T18:07:55+00:00"
         },
         {
             "name": "ised-isde/remote-manage",
@@ -17309,39 +17310,6 @@
                 "source": "https://github.com/stecman/symfony-console-completion/tree/0.11.0"
             },
             "time": "2019-11-24T17:03:06+00:00"
-        },
-        {
-            "name": "steve.mcnabb/ised_publications_module",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevemcnabb/ised_publications_module.git",
-                "reference": "8f3f4988e1e442afd07671e388fa844a6620c3a4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevemcnabb/ised_publications_module/zipball/8f3f4988e1e442afd07671e388fa844a6620c3a4",
-                "reference": "8f3f4988e1e442afd07671e388fa844a6620c3a4",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "project",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Steve McNabb",
-                    "email": "steve.mcnabb@canada.ca"
-                }
-            ],
-            "description": "ISED Publications Module",
-            "support": {
-                "issues": "https://github.com/stevemcnabb/ised_publications_module/issues",
-                "source": "https://github.com/stevemcnabb/ised_publications_module/tree/main"
-            },
-            "time": "2021-01-25T18:44:21+00:00"
         },
         {
             "name": "swagger-api/swagger-ui",
@@ -20575,6 +20543,49 @@
     ],
     "packages-dev": [
         {
+            "name": "drupal/coder",
+            "version": "8.3.12",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/coder.git",
+                "reference": "719ddb16aec2e5da4ce274bf3bf8450caef564d4"
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0.8",
+                "sirbrillig/phpcs-variable-analysis": "^2.10",
+                "squizlabs/php_codesniffer": "^3.5.6",
+                "symfony/yaml": ">=2.0.5"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.51",
+                "phpunit/phpunit": "^6.0 || ^7.0"
+            },
+            "type": "phpcodesniffer-standard",
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\": "coder_sniffer/Drupal/",
+                    "DrupalPractice\\": "coder_sniffer/DrupalPractice/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Coder is a library to review Drupal code.",
+            "homepage": "https://www.drupal.org/project/coder",
+            "keywords": [
+                "code review",
+                "phpcs",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/coder",
+                "source": "https://www.drupal.org/project/coder"
+            },
+            "time": "2020-12-06T09:34:55+00:00"
+        },
+        {
             "name": "drupal/css_editor",
             "version": "1.2.0",
             "source": {
@@ -20629,6 +20640,115 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/css_editor"
             }
+        },
+        {
+            "name": "sirbrillig/phpcs-variable-analysis",
+            "version": "v2.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
+                "reference": "0775e0c683badad52c03b11c2cd86a9fdecb937a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/0775e0c683badad52c03b11c2cd86a9fdecb937a",
+                "reference": "0775e0c683badad52c03b11c2cd86a9fdecb937a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "limedeck/phpunit-detailed-printer": "^3.1 || ^4.0 || ^5.0",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^5.0 || ^6.5 || ^7.0 || ^8.0",
+                "sirbrillig/phpcs-import-detection": "^1.1"
+            },
+            "type": "phpcodesniffer-standard",
+            "autoload": {
+                "psr-4": {
+                    "VariableAnalysis\\": "VariableAnalysis/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sam Graham",
+                    "email": "php-codesniffer-variableanalysis@illusori.co.uk"
+                },
+                {
+                    "name": "Payton Swick",
+                    "email": "payton@foolord.com"
+                }
+            ],
+            "description": "A PHPCS sniff to detect problems with variables.",
+            "support": {
+                "issues": "https://github.com/sirbrillig/phpcs-variable-analysis/issues",
+                "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
+                "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
+            },
+            "time": "2021-01-08T16:31:05+00:00"
+        },
+        {
+            "name": "squizlabs/php_codesniffer",
+            "version": "3.5.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
+                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9d583721a7157ee997f235f327de038e7ea6dac4",
+                "reference": "9d583721a7157ee997f235f327de038e7ea6dac4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-simplexml": "*",
+                "ext-tokenizer": "*",
+                "ext-xmlwriter": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "bin": [
+                "bin/phpcs",
+                "bin/phpcbf"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Greg Sherwood",
+                    "role": "lead"
+                }
+            ],
+            "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
+            "keywords": [
+                "phpcs",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://github.com/squizlabs/PHP_CodeSniffer/issues",
+                "source": "https://github.com/squizlabs/PHP_CodeSniffer",
+                "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
+            },
+            "time": "2020-10-23T02:01:07+00:00"
         }
     ],
     "aliases": [
@@ -20641,8 +20761,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ised-isde/drupal-base": 20,
-        "steve.mcnabb/ised_publications_module": 20
+        "ised-isde/drupal-base": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
