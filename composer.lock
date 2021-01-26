@@ -13963,7 +13963,7 @@
             "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://scm.ised-isde.canada.ca/scm/~duncan.sutter_canada.ca/epic_import.git",
+                "url": "git@scm.ised-isde.canada.ca:scm/~duncan.sutter_canada.ca/epic_import.git",
                 "reference": "master"
             },
             "type": "drupal-module"
