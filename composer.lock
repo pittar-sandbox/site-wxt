@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06eaf99b4e15ab285b868eafa3c178c1",
+    "content-hash": "36c60421f279691af693c4463a63fe6e",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -8797,17 +8797,17 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.19.0",
+            "version": "3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.19"
+                "reference": "8.x-3.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.19.zip",
-                "reference": "8.x-3.19",
-                "shasum": "b9909e935eb8f72c993d23548c732324636b774f"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.20.zip",
+                "reference": "8.x-3.20",
+                "shasum": "ce1b51f8a60b924382800598b4ff90ae4680936c"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -8824,7 +8824,7 @@
                 "drupal/libraries": "^3.0-alpha6",
                 "drupal/lightning_core": "3.* || 4.* || 5.*",
                 "drupal/media_entity_instagram": "^3",
-                "drupal/media_entity_twitter": "^2.1",
+                "drupal/media_entity_twitter": "^2.5",
                 "drupal/slick": "^2.0",
                 "drupal/slick_entityreference": "^2.0",
                 "drupal/video_embed_field": "^2.0",
@@ -8851,8 +8851,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.19",
-                    "datestamp": "1608315533",
+                    "version": "8.x-3.20",
+                    "datestamp": "1611678912",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14918,12 +14918,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base.git",
-                "reference": "8819e405c3d0c38b112b4d357bf679d384439eed"
+                "reference": "846eba17a2b67455779567c9a142a764709cfd44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/8819e405c3d0c38b112b4d357bf679d384439eed",
-                "reference": "8819e405c3d0c38b112b4d357bf679d384439eed",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/846eba17a2b67455779567c9a142a764709cfd44",
+                "reference": "846eba17a2b67455779567c9a142a764709cfd44",
                 "shasum": ""
             },
             "require": {
@@ -15072,6 +15072,7 @@
                 },
                 "patches": {
                     "drupal/core": {
+                        "Big pipe patch": "https://www.drupal.org/files/issues/2021-01-24/3194462.patch",
                         "Node previews are cached by dynamic page cache": "https://www.drupal.org/files/issues/2020-04-13/d8_node_preview.patch",
                         "file usage bug fixes": "https://www.drupal.org/files/issues/2020-04-03/2810355-64.patch",
                         "core views module fix for breadcrumb title and page title": "https://www.drupal.org/files/issues/2020-08-06/2716019-99-d88x.patch",
@@ -15103,7 +15104,7 @@
                         "Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2020-10-20/3115158-6.patch"
                     },
                     "drupal/linkit": {
-                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-14/3078075-22.patch"
+                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-25/3078075-24_0.patch"
                     },
                     "drupal/lightning_media": {
                         "Bulk media upload should have an option to select the target media entity bundle": "https://www.drupal.org/files/issues/2019-11-29/lightning_bulk_upload_form-3097516-2.patch"
@@ -15159,7 +15160,7 @@
                 "issues": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/issues",
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
-            "time": "2021-01-22T16:08:56+00:00"
+            "time": "2021-01-26T18:07:55+00:00"
         },
         {
             "name": "ised-isde/remote-manage",
@@ -17309,39 +17310,6 @@
                 "source": "https://github.com/stecman/symfony-console-completion/tree/0.11.0"
             },
             "time": "2019-11-24T17:03:06+00:00"
-        },
-        {
-            "name": "steve.mcnabb/ised_publications_module",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/stevemcnabb/ised_publications_module.git",
-                "reference": "8f3f4988e1e442afd07671e388fa844a6620c3a4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/stevemcnabb/ised_publications_module/zipball/8f3f4988e1e442afd07671e388fa844a6620c3a4",
-                "reference": "8f3f4988e1e442afd07671e388fa844a6620c3a4",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "project",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Steve McNabb",
-                    "email": "steve.mcnabb@canada.ca"
-                }
-            ],
-            "description": "ISED Publications Module",
-            "support": {
-                "issues": "https://github.com/stevemcnabb/ised_publications_module/issues",
-                "source": "https://github.com/stevemcnabb/ised_publications_module/tree/main"
-            },
-            "time": "2021-01-25T18:44:21+00:00"
         },
         {
             "name": "swagger-api/swagger-ui",
@@ -20793,8 +20761,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ised-isde/drupal-base": 20,
-        "steve.mcnabb/ised_publications_module": 20
+        "ised-isde/drupal-base": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
