@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f7cd5c155d2aa441146027dfd3b95013",
+    "content-hash": "860d9a9137c725add0e738b2d81325cf",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -260,16 +260,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.171.21",
+            "version": "3.172.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0455d92bb12d44f80db96a4e70861d186063e9e5"
+                "reference": "28a0929598be6e9e0b652091712068d37acd9d0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0455d92bb12d44f80db96a4e70861d186063e9e5",
-                "reference": "0455d92bb12d44f80db96a4e70861d186063e9e5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/28a0929598be6e9e0b652091712068d37acd9d0a",
+                "reference": "28a0929598be6e9e0b652091712068d37acd9d0a",
                 "shasum": ""
             },
             "require": {
@@ -344,9 +344,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.21"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.172.1"
             },
-            "time": "2021-01-21T19:15:43+00:00"
+            "time": "2021-01-26T19:11:49+00:00"
         },
         {
             "name": "bower-asset/cropper",
@@ -8733,17 +8733,17 @@
         },
         {
             "name": "drupal/lightning_media",
-            "version": "3.19.0",
+            "version": "3.20.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/lightning_media.git",
-                "reference": "8.x-3.19"
+                "reference": "8.x-3.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.19.zip",
-                "reference": "8.x-3.19",
-                "shasum": "b9909e935eb8f72c993d23548c732324636b774f"
+                "url": "https://ftp.drupal.org/files/projects/lightning_media-8.x-3.20.zip",
+                "reference": "8.x-3.20",
+                "shasum": "ce1b51f8a60b924382800598b4ff90ae4680936c"
             },
             "require": {
                 "bower-asset/cropper": "^2.3",
@@ -8760,7 +8760,7 @@
                 "drupal/libraries": "^3.0-alpha6",
                 "drupal/lightning_core": "3.* || 4.* || 5.*",
                 "drupal/media_entity_instagram": "^3",
-                "drupal/media_entity_twitter": "^2.1",
+                "drupal/media_entity_twitter": "^2.5",
                 "drupal/slick": "^2.0",
                 "drupal/slick_entityreference": "^2.0",
                 "drupal/video_embed_field": "^2.0",
@@ -8787,8 +8787,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.19",
-                    "datestamp": "1608315533",
+                    "version": "8.x-3.20",
+                    "datestamp": "1611678912",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13959,16 +13959,6 @@
             "time": "2020-11-11T04:36:51+00:00"
         },
         {
-            "name": "dsutter/epic_import",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "git@scm.ised-isde.canada.ca:scm/~duncan.sutter_canada.ca/epic_import.git",
-                "reference": "master"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "easyrdf/easyrdf",
             "version": "0.9.1",
             "source": {
@@ -14859,17 +14849,27 @@
             "time": "2020-04-16T23:44:31+00:00"
         },
         {
+            "name": "ised-isde/cioetdm-modules",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
+                "reference": "master"
+            },
+            "type": "drupal-module"
+        },
+        {
             "name": "ised-isde/drupal-base",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base.git",
-                "reference": "8819e405c3d0c38b112b4d357bf679d384439eed"
+                "reference": "846eba17a2b67455779567c9a142a764709cfd44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/8819e405c3d0c38b112b4d357bf679d384439eed",
-                "reference": "8819e405c3d0c38b112b4d357bf679d384439eed",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/846eba17a2b67455779567c9a142a764709cfd44",
+                "reference": "846eba17a2b67455779567c9a142a764709cfd44",
                 "shasum": ""
             },
             "require": {
@@ -15018,6 +15018,7 @@
                 },
                 "patches": {
                     "drupal/core": {
+                        "Big pipe patch": "https://www.drupal.org/files/issues/2021-01-24/3194462.patch",
                         "Node previews are cached by dynamic page cache": "https://www.drupal.org/files/issues/2020-04-13/d8_node_preview.patch",
                         "file usage bug fixes": "https://www.drupal.org/files/issues/2020-04-03/2810355-64.patch",
                         "core views module fix for breadcrumb title and page title": "https://www.drupal.org/files/issues/2020-08-06/2716019-99-d88x.patch",
@@ -15049,7 +15050,7 @@
                         "Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2020-10-20/3115158-6.patch"
                     },
                     "drupal/linkit": {
-                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-14/3078075-22.patch"
+                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-25/3078075-24_0.patch"
                     },
                     "drupal/lightning_media": {
                         "Bulk media upload should have an option to select the target media entity bundle": "https://www.drupal.org/files/issues/2019-11-29/lightning_bulk_upload_form-3097516-2.patch"
@@ -15105,7 +15106,7 @@
                 "issues": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/issues",
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
-            "time": "2021-01-22T16:08:56+00:00"
+            "time": "2021-01-26T18:07:55+00:00"
         },
         {
             "name": "ised-isde/remote-manage",
