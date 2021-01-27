@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "20d47893234129bf5fa88cac606f6dbe",
+    "content-hash": "0f0ce7f1eac67fde9b208a04822d9220",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -386,7 +386,7 @@
             "version": "3.5.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
+                "url": "https://github.com/jquery/jquery-dist.git",
                 "reference": "4c0e4becb8263bb5b3e6dadc448d8e7305ef8215"
             },
             "dist": {
@@ -14849,6 +14849,16 @@
             "time": "2020-04-16T23:44:31+00:00"
         },
         {
+            "name": "ised-isde/cioetdm-modules",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "git@scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
+                "reference": "master"
+            },
+            "type": "drupal-module"
+        },
+        {
             "name": "ised-isde/drupal-base",
             "version": "dev-main",
             "source": {
@@ -20019,7 +20029,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz"
+                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz",
+                "reference": "1.16"
             },
             "type": "drupal-library"
         },
@@ -20180,7 +20191,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz",
+                "reference": "v4.0.27-theme-base"
             },
             "type": "drupal-library"
         },
@@ -20194,7 +20206,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz",
+                "reference": "v4.0.27-theme-gc-intranet"
             },
             "type": "drupal-library"
         },
@@ -20208,7 +20221,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v6.1-gcweb.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v6.1-gcweb.tar.gz",
+                "reference": "v6.1-gcweb"
             },
             "type": "drupal-library"
         },
@@ -20222,7 +20236,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz",
+                "reference": "v4.0.29-gcweb"
             },
             "type": "drupal-library"
         },
@@ -20236,7 +20251,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz",
+                "reference": "v4.0.27-theme-gcwu-fegc"
             },
             "type": "drupal-library"
         },
@@ -20250,7 +20266,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz",
+                "reference": "v4.0.27-theme-ogpl"
             },
             "type": "drupal-library"
         },
@@ -20264,7 +20281,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.38-theme-wet-boew.tar.gz"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.38-theme-wet-boew.tar.gz",
+                "reference": "v4.0.38-theme-wet-boew"
             },
             "type": "drupal-library"
         },
@@ -20278,7 +20296,8 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.38.tar.gz"
+                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.38.tar.gz",
+                "reference": "v4.0.38"
             },
             "type": "drupal-library"
         },
