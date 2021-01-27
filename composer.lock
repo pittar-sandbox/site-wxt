@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b528068eef4c8f64f755a817716214b1",
+    "content-hash": "20d47893234129bf5fa88cac606f6dbe",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -15126,6 +15126,33 @@
             "time": "2021-01-27T12:37:16+00:00"
         },
         {
+            "name": "ised-isde/epic_theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ised-isde-canada/ciodrcoe-epic_theme.git",
+                "reference": "771abe8436d2b3b7e99c4b8eb1adbf9cc2cca5be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-epic_theme/zipball/771abe8436d2b3b7e99c4b8eb1adbf9cc2cca5be",
+                "reference": "771abe8436d2b3b7e99c4b8eb1adbf9cc2cca5be",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "EPIC sub-theme",
+            "support": {
+                "issues": "https://github.com/ised-isde-canada/ciodrcoe-epic_theme/issues",
+                "source": "https://github.com/ised-isde-canada/ciodrcoe-epic_theme/tree/master"
+            },
+            "time": "2021-01-27T18:42:59+00:00"
+        },
+        {
             "name": "ised-isde/remote-manage",
             "version": "1.0.3",
             "source": {
@@ -20516,7 +20543,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "ised-isde/drupal-base": 20,
-        "ised-isde/epic_import": 20
+        "ised-isde/epic_import": 20,
+        "ised-isde/epic_theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
