@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47e678fc764ad6030c27d1c5293c09fe",
+    "content-hash": "b528068eef4c8f64f755a817716214b1",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -353,7 +353,7 @@
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/fengyuanchen/cropper.git",
+                "url": "git@github.com:fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -14849,16 +14849,6 @@
             "time": "2020-04-16T23:44:31+00:00"
         },
         {
-            "name": "ised-isde/cioetdm-modules",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "git@scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
-                "reference": "master"
-            },
-            "type": "drupal-module"
-        },
-        {
             "name": "ised-isde/drupal-base",
             "version": "dev-main",
             "source": {
@@ -15107,6 +15097,33 @@
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
             "time": "2021-01-26T18:07:55+00:00"
+        },
+        {
+            "name": "ised-isde/epic_import",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ised-isde-canada/ciodrcoe-epic_import.git",
+                "reference": "045deb2e1da04d502fdfce6d644708eb3ed0c34e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-epic_import/zipball/045deb2e1da04d502fdfce6d644708eb3ed0c34e",
+                "reference": "045deb2e1da04d502fdfce6d644708eb3ed0c34e",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "EPIC Import Module",
+            "support": {
+                "issues": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/issues",
+                "source": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/tree/master"
+            },
+            "time": "2021-01-27T12:37:16+00:00"
         },
         {
             "name": "ised-isde/remote-manage",
@@ -19975,8 +19992,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz",
-                "reference": "1.16"
+                "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/archive/1.16.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20137,8 +20153,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz",
-                "reference": "v4.0.27-theme-base"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-base.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20152,8 +20167,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz",
-                "reference": "v4.0.27-theme-gc-intranet"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gc-intranet.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20167,8 +20181,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v6.1-gcweb.tar.gz",
-                "reference": "v6.1-gcweb"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v6.1-gcweb.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20182,8 +20195,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz",
-                "reference": "v4.0.29-gcweb"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.29-gcweb.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20197,8 +20209,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz",
-                "reference": "v4.0.27-theme-gcwu-fegc"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-gcwu-fegc.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20212,8 +20223,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz",
-                "reference": "v4.0.27-theme-ogpl"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.27-theme-ogpl.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20227,8 +20237,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.38-theme-wet-boew.tar.gz",
-                "reference": "v4.0.38-theme-wet-boew"
+                "url": "https://github.com/wet-boew/themes-cdn/archive/v4.0.38-theme-wet-boew.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20242,8 +20251,7 @@
             },
             "dist": {
                 "type": "tar",
-                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.38.tar.gz",
-                "reference": "v4.0.38"
+                "url": "https://github.com/wet-boew/wet-boew-cdn/archive/v4.0.38.tar.gz"
             },
             "type": "drupal-library"
         },
@@ -20507,7 +20515,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ised-isde/drupal-base": 20
+        "ised-isde/drupal-base": 20,
+        "ised-isde/epic_import": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
