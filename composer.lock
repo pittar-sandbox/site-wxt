@@ -14853,7 +14853,7 @@
             "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://jenkins:MDA5NDg5OTE1OTA5Osc26ceZInF97FFDoPvEoF7ycR+n@scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
+                "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
                 "reference": "master"
             },
             "type": "drupal-module"
