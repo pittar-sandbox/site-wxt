@@ -11,7 +11,8 @@ services:
     volumes:
     # For local development, you can map a local directory to the image instead of using the volume
     #  - <your local dev directory>:/opt/app-root/src/data/sites/default/
-      - /Users/stv/Desktop/InProgress/ISED/workspace/scmspc/ised_publications_module:/opt/app-root/src/data/sites/default/modules/ised/ised_publications_module
+      - /Users/x/Desktop/InProgress/ISED/workspace/scmspc/scmspc-module:/opt/app-root/src/data/sites/default/modules/ised/
+      - /Users/x/Desktop/InProgress/ISED/workspace/scmspc/scmspc-theme:/opt/app-root/src/data/sites/default/themes/ised/
       - scmspc-drupal-data:/opt/app-root/src/data
     env_file:
       - .env
@@ -33,6 +34,8 @@ services:
       AWS_S3_BUCKET: $AWS_S3_BUCKET
       AWS_S3_REGION: $AWS_S3_REGION
       PATH: $PATH:/tmp
+    env_file:
+    - .env
   portainer:
       image: portainer/portainer
       container_name: scmspc_portainer
