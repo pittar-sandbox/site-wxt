@@ -121,7 +121,7 @@
     "require": {
         "ised-isde/drupal-base": "dev-main",
         "drupal/linkit": "6.0-beta2 as 5.0-beta11",
-        "ised-isde/epic_import": "dev-master"
+        "ised-isde/epic_import": "^1.0"
     },
     "autoload": {
         "classmap": [
