@@ -16,6 +16,10 @@ services:
       - scmspc-drupal-data:/opt/app-root/src/data
     env_file:
       - .env
+    environment:
+      LC_ALL: C.UTF-8
+      LANG: C.UTF-8
+      LANGUAGE: C.UTF-8
   postgres: 
     image: registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/ised-postgresql:9.6  
     container_name: smcspc-postgres

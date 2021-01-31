@@ -2,7 +2,7 @@
     "name": "ised-isde/ised-cms",
     "description": "Project for ISED Drupal CMS",
     "type": "project",
-    "license": "GPL-2.0+",
+    "license": "proprietary",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
