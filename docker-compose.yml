@@ -2,9 +2,7 @@ version: "3"
 
 services:
   drupal:
-    build:
-      context: .
-      dockerfile: ./Dockerfile 
+    image: registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/drupal-wxt:scmspc-8.dev
     container_name: scmspc-drupal
     ports:
       - 8080:8080
