@@ -20,7 +20,7 @@ pipeline {
                 script {
                     sh"""
                         composer.phar clearcache && \
-                        composer.phar install --no-interaction --no-ansi --optimize-autoloader
+                        composer.phar install --no-interaction --no-ansi --optimize-autoloader --ignore-platform-reqs
                     """
                     //builder.buildApp("${IMAGE_NAME}")
                 }
