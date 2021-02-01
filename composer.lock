@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5a26a4d995df2c23d44525fcbd7bcad",
+    "content-hash": "56ca26e85201c32a66ca57faa8d3a889",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -11172,16 +11172,6 @@
                 "source": "https://github.com/ised-isde-canada/remote-manage/tree/1.0.3"
             },
             "time": "2020-09-30T16:48:44+00:00"
-        },
-        {
-            "name": "ised/remote-manage",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ised-isde-canada/remote-manage.git",
-                "reference": "master"
-            },
-            "type": "library"
         },
         {
             "name": "j7mbo/twitter-api-php",
