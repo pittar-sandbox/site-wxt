@@ -19,8 +19,8 @@ pipeline {
             steps {
                 script {
                     sh"""
-                        ./composer.phar clearcache && \
-                        ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
+                        composer.phar clearcache && \
+                        composer.phar install --no-interaction --no-ansi --optimize-autoloader
                     """
                     //builder.buildApp("${IMAGE_NAME}")
                 }
