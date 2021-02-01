@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c0ce7766ffcd235442bbc6a75fc01b26",
+    "content-hash": "483c69a514e6757852e6f4de929f4819",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -15113,6 +15113,32 @@
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
             "time": "2021-01-26T18:07:55+00:00"
+        },
+        {
+            "name": "ised-isde/epic_import",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ised-isde-canada/ciodrcoe-epic_import.git",
+                "reference": "5cffca49921ac781284cc4dc4b78b6e74e0e7528"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-epic_import/zipball/5cffca49921ac781284cc4dc4b78b6e74e0e7528",
+                "reference": "5cffca49921ac781284cc4dc4b78b6e74e0e7528",
+                "shasum": ""
+            },
+            "type": "drupal-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "EPIC Import Module",
+            "support": {
+                "issues": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/issues",
+                "source": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/tree/1.0.0"
+            },
+            "time": "2021-01-29T18:57:44+00:00"
         },
         {
             "name": "ised-isde/remote-manage",
