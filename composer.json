@@ -19,7 +19,8 @@
         "drupal/phpmailer_smtp": "^2.0",
         "nodespark/des-connector": "dev-master",
         "lusitanian/oauth": "^0.8.11",
-        "ised-isde/remote-manage": "^1.0"
+        "ised-isde/remote-manage": "^1.0",
+        "drupal/css_editor": "^1.2"
     },
     "require-dev": {
         "drupal/core-dev": "^8.8",
