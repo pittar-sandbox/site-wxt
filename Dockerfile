@@ -5,8 +5,8 @@ USER root
 ENV COMPOSER_FILE=composer-installer \
     DOCUMENTROOT=/html
 
-RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
-    php $COMPOSER_FILE --version=2.0.8
+#RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
+#    php $COMPOSER_FILE --version=2.0.8
 
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
     yum --disablerepo=rhel-8-for-x86_64-appstream-rpms install -y postgresql12 && \
@@ -21,8 +21,8 @@ RUN chgrp -R 0 /opt/app-root/src && \
 
 # Do not run composer as root
 USER 1001
-RUN ./composer.phar clearcache && \
-    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
+#RUN ./composer.phar clearcache && \
+#    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
 USER root
 
 RUN mkdir -p /opt/app-root/src/data/sites && \

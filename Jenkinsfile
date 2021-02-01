@@ -19,14 +19,10 @@ pipeline {
             steps {
                 script {
                     sh"""
-                        ls -l
-
                         composer.phar clearcache && \
                         composer.phar install --no-interaction --no-ansi --optimize-autoloader --ignore-platform-reqs
-
-                        ls -l
                     """
-                    //builder.buildApp("${IMAGE_NAME}")
+                    builder.buildApp("${IMAGE_NAME}")
                 }
             }
         }
