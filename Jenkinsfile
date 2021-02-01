@@ -19,9 +19,10 @@ pipeline {
             steps {
                 script {
                     sh"""
-                        git clone https://scm.ised-isde.canada.ca/scm/is/ised-ocp-scripts.git
+                        ./composer.phar clearcache && \
+                        ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
                     """
-                    builder.buildApp("${IMAGE_NAME}")
+                    //builder.buildApp("${IMAGE_NAME}")
                 }
             }
         }
