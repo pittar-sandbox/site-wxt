@@ -20,10 +20,10 @@ RUN chgrp -R 0 /opt/app-root/src && \
     chmod -R g=u+wx /opt/app-root/src
 
 # Do not run composer as root
-USER 1001
-RUN ./composer.phar clearcache && \
-    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
-USER root
+#USER 1001
+#RUN ./composer.phar clearcache && \
+#    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
+#USER root
 
 RUN mkdir -p /opt/app-root/src/data/sites && \
     rm -rf /opt/app-root/src/html/sites && \
