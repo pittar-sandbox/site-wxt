@@ -38,7 +38,7 @@ USER 1001
 #RUN ./composer.phar clearcache && \
 #    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
 
-RUN ./composer.phar check-platform-reqs
+RUN /usr/bin/composer check-platform-reqs
 USER root
 
 RUN mkdir -p /opt/app-root/src/data/sites && \
