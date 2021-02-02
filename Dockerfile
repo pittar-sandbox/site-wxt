@@ -50,4 +50,6 @@ RUN chgrp -R 1000870000 /opt/app-root/src && \
 
 USER 1000870000
 
+RUN ln -s /opt/app-root/src/vendor/ised-isde/remote-manage/manage.php  /opt/app-root/src/html/manage.php
+
 ENTRYPOINT ["bin/run"]

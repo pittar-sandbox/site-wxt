@@ -16,6 +16,11 @@ rootshell:
 help : Makefile 
 	@sed -n 's/^##//p' $<
 
+.PHONY: getpods
+getpods:
+	oc get pods | grep Run
+	
+
 %:
 	@:
 
