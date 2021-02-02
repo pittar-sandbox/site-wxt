@@ -29,7 +29,7 @@ pipeline {
                             --optimize-autoloader \
                             --ignore-platform-reqs
                         
-                        ls -l
+                        ls -l vendor
                     """
                     builder.buildApp("${IMAGE_NAME}")
                 }
