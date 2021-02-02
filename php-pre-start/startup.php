@@ -11,5 +11,5 @@ file_put_contents('/opt/app-root/src/sites', print_r($sites, true));
 
 chdir('html');
 foreach ($sites as $name) {
-  link('.', $name);
+  symlink('.', $name);
 }
