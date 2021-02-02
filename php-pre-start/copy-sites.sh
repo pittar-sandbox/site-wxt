@@ -1,7 +1,5 @@
 #!/bin/bash
 
-/usr/bin/php $(dirname $0)/startup.php
-
 if [ -f /opt/app-root/src/html/sites/default/settings.php ]; then
     echo "Data exists, skip copying default data."
 else
