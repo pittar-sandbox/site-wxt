@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4af59d7c22930fba24f69c59fa2d4bf1",
+    "content-hash": "6894ab90cdd7ecb34217ccfd7157da37",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -14857,10 +14857,10 @@
         },
         {
             "name": "ised-isde/cioetdm-modules",
-            "version": "1.1",
+            "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
+                "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
                 "reference": "master"
             },
             "type": "drupal-module"
@@ -14871,12 +14871,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base.git",
-                "reference": "63ad6f0cac7211b9d4b9dc4af77251a60349f2fd"
+                "reference": "bc679a4fb61c9167a9d61d71d6f127f0c7ad9280"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/63ad6f0cac7211b9d4b9dc4af77251a60349f2fd",
-                "reference": "63ad6f0cac7211b9d4b9dc4af77251a60349f2fd",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/bc679a4fb61c9167a9d61d71d6f127f0c7ad9280",
+                "reference": "bc679a4fb61c9167a9d61d71d6f127f0c7ad9280",
                 "shasum": ""
             },
             "require": {
@@ -15056,7 +15056,7 @@
                         "Add functionality to immediately delete files and override usage check": "https://www.drupal.org/files/issues/2020-10-20/3115158-6.patch"
                     },
                     "drupal/linkit": {
-                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-01-25/3078075-24_0.patch"
+                        "Detect and strip base URL from pasted URLs to increase matching hits": "https://www.drupal.org/files/issues/2021-02-02/3078075-26.patch"
                     },
                     "drupal/lightning_media": {
                         "Bulk media upload should have an option to select the target media entity bundle": "https://www.drupal.org/files/issues/2019-11-29/lightning_bulk_upload_form-3097516-2.patch"
@@ -15111,7 +15111,7 @@
                 "issues": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/issues",
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
-            "time": "2021-02-01T21:14:22+00:00"
+            "time": "2021-02-02T18:12:31+00:00"
         },
         {
             "name": "ised-isde/epic_import",
