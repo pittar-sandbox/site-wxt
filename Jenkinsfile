@@ -19,8 +19,6 @@ pipeline {
             steps {
                 script {
                     sh"""
-                        ls -l
-
                         composer.phar clearcache && \
                         composer.phar install \
                             --no-interaction \
@@ -29,7 +27,7 @@ pipeline {
                             --optimize-autoloader \
                             --ignore-platform-reqs
                         
-                        ls -l vendor
+                        ls -l vendor/ised-isde
                     """
                     builder.buildApp("${IMAGE_NAME}")
                 }
