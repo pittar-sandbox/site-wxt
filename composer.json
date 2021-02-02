@@ -8,8 +8,8 @@
     "require": {
         "cweagans/composer-patches": "^1.6.0",
         "drupal/core-composer-scaffold": "*",
-        "drupalwxt/wxt": "dev-8.x-3.x",
-        "drush/drush": "^9.0",
+        "drupalwxt/wxt": "3.0.19",
+        "drush/drush": "^10.0",
         "oomphinc/composer-installers-extender": "^1.1 || ^2",
         "drupal/health_check": "^1.2",
         "phpmailer/phpmailer": "^6.1",
@@ -20,7 +20,11 @@
         "nodespark/des-connector": "dev-master",
         "lusitanian/oauth": "^0.8.11",
         "ised-isde/remote-manage": "^1.0",
-        "drupal/css_editor": "^1.2"
+        "drupal/css_editor": "^1.2",
+        "ised-isde/drupal-base": "dev-main",
+        "drupal/linkit": "6.0-beta2 as 5.0-beta11",
+        "ised-isde/epic_import": "^1.0",
+        "ised-isde/cioetdm-modules": "1.0"
     },
     "require-dev": {
         "drupal/core-dev": "^8.8",
@@ -50,17 +54,13 @@
             "url": "https://drupalwxt.github.io/composer-extdeps/"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/ossobuffo/drupal-console-extend-plugin.git"
-        },
-        {
             "type": "package",
             "package": {
-                "name": "ised/remote-manage",
+                "name": "ised-isde/cioetdm-modules",
                 "version": "1.0",
-                "type": "library",
+                "type": "drupal-module",
                 "source": {
-                    "url": "https://github.com/ised-isde-canada/remote-manage.git",
+                    "url": "scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
                     "type": "git",
                     "reference": "master"
                 }

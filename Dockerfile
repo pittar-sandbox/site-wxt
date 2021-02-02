@@ -34,10 +34,11 @@ RUN chgrp -R 1001 /opt/app-root/src && \
 # Do not run composer as root  
 USER 1001
 
+# When building images in Docker, uncomment these lines
 #RUN ./composer.phar clearcache && \
 #    ./composer.phar install --no-interaction --no-ansi --optimize-autoloader
-RUN /usr/bin/composer clearcache && composer install --no-interaction --no-ansi --optimize-autoloader
 
+RUN ./composer.phar check-platform-reqs
 USER root
 
 RUN mkdir -p /opt/app-root/src/data/sites && \
