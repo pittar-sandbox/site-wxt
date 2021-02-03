@@ -18,20 +18,6 @@
             "type": "composer",
             "url": "https://drupalwxt.github.io/composer-extdeps/"
         },
-        /*
-        {
-            "type": "composer",
-            "package": {
-                "name": "ised-isde/cioetdm-modules",
-                "version": "1.0",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }*/
         {
             "type": "composer",
             "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git"
