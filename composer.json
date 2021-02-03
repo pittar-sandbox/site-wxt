@@ -19,8 +19,17 @@
             "url": "https://drupalwxt.github.io/composer-extdeps/"
         },
         {
-            "type": "composer",
-            "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git"
+            "type": "package",
+            "package": {
+                "name": "ised-isde/cioetdm-modules",
+                "version": "1.0",
+                "type": "package",
+                "source": {
+                    "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
     ],
     "scripts": {
@@ -114,7 +123,7 @@
         "drupal/linkit": "6.0-beta2 as 5.0-beta11",
         "ised-isde/epic_import": "dev-master",
         "ised-isde/epic_theme": "dev-master",
-        "scm/drupal/cioetdm-modules": "master"
+        "drupal/cioetdm-modules": "*"
     },
     "autoload": {
         "classmap": [
