@@ -23,7 +23,6 @@ pipeline {
                         composer.phar install \
                             --no-interaction \
                             --no-ansi \
-                            --verbose \
                             --optimize-autoloader \
                             --ignore-platform-reqs
                         
