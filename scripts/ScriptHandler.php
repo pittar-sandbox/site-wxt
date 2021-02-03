@@ -184,10 +184,6 @@ class ScriptHandler {
       $root = static::getDrupalRoot(getcwd());
       $src = dirname($root);
 
-      if ($fs->exists("$src/vendor/ised-isde/remote-manage/rmanage.php")) {
-        $fs->symlink("$src/vendor/ised-isde/remote-manage/rmanage.php", "$root/rmanage.php");
-      }
-
       // Prepare the settings file for installation.
       if (!$fs->exists($root . '/tempsite/default/default.settings.php') and $fs->exists($root . '/sites/default/default.settings.php')) {
           $fs->copy($root . '/sites/default/default.settings.php', $root . '/tempsite/default/default.settings.php');
