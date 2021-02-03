@@ -21,11 +21,11 @@
         {
             "type": "package",
             "package": {
-                "name": "ised-isde/cioetdm-modules",
-                "version": "1.1",
+                "name": "ised/cioetdm-modules",
+                "version": "1.0",
                 "type": "drupal-module",
                 "source": {
-                    "url": "git@scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
+                    "url": "https://scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
                     "type": "git",
                     "reference": "master"
                 }
@@ -121,7 +121,8 @@
     "require": {
         "ised-isde/drupal-base": "dev-main",
         "drupal/linkit": "6.0-beta2 as 5.0-beta11",
-        "ised-isde/epic_import": "^1.0"
+        "ised-isde/epic_import": "^1.0",
+        "ised/cioetdm-modules": "1.0"
     },
     "autoload": {
         "classmap": [

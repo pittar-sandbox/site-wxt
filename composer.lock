@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9f939171b7184f69f4a73adad23ffb3",
+    "content-hash": "99ee2557cebaec8b86a5e9e9e2b448ce",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -260,16 +260,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.172.4",
+            "version": "3.173.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "506e60798bb7d13bdafadce9727ab9cc9ac987b0"
+                "reference": "ab3ee1cba4219d5262ecac8f011f267e9b7f3af9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/506e60798bb7d13bdafadce9727ab9cc9ac987b0",
-                "reference": "506e60798bb7d13bdafadce9727ab9cc9ac987b0",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ab3ee1cba4219d5262ecac8f011f267e9b7f3af9",
+                "reference": "ab3ee1cba4219d5262ecac8f011f267e9b7f3af9",
                 "shasum": ""
             },
             "require": {
@@ -344,16 +344,16 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.172.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.173.0"
             },
-            "time": "2021-01-29T19:17:51+00:00"
+            "time": "2021-02-02T20:01:31+00:00"
         },
         {
             "name": "bower-asset/cropper",
             "version": "v2.3.4",
             "source": {
                 "type": "git",
-                "url": "git@github.com:fengyuanchen/cropper.git",
+                "url": "https://github.com/fengyuanchen/cropper.git",
                 "reference": "30c58b29ee21010e17e58ebab165fbd84285c685"
             },
             "dist": {
@@ -14861,12 +14861,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base.git",
-                "reference": "bc679a4fb61c9167a9d61d71d6f127f0c7ad9280"
+                "reference": "64011d5ddf21d2d57ce190c217746606852c4d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/bc679a4fb61c9167a9d61d71d6f127f0c7ad9280",
-                "reference": "bc679a4fb61c9167a9d61d71d6f127f0c7ad9280",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-drupal-base/zipball/64011d5ddf21d2d57ce190c217746606852c4d7e",
+                "reference": "64011d5ddf21d2d57ce190c217746606852c4d7e",
                 "shasum": ""
             },
             "require": {
@@ -15101,7 +15101,7 @@
                 "issues": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/issues",
                 "source": "https://github.com/ised-isde-canada/ciodrcoe-drupal-base/tree/main"
             },
-            "time": "2021-02-02T18:12:31+00:00"
+            "time": "2021-02-03T17:55:08+00:00"
         },
         {
             "name": "ised-isde/epic_import",
@@ -15131,16 +15131,16 @@
         },
         {
             "name": "ised-isde/remote-manage",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/remote-manage.git",
-                "reference": "4791f2d3e9bb569d691635a9a27c43ebe41278d5"
+                "reference": "224875e357645f8e1e6336e877db72f1fc66ff2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/remote-manage/zipball/4791f2d3e9bb569d691635a9a27c43ebe41278d5",
-                "reference": "4791f2d3e9bb569d691635a9a27c43ebe41278d5",
+                "url": "https://api.github.com/repos/ised-isde-canada/remote-manage/zipball/224875e357645f8e1e6336e877db72f1fc66ff2d",
+                "reference": "224875e357645f8e1e6336e877db72f1fc66ff2d",
                 "shasum": ""
             },
             "require": {
@@ -15159,12 +15159,22 @@
             "license": [
                 "GPL-2.0+"
             ],
-            "description": "Remote Management",
+            "description": "Remote Site Management",
             "support": {
                 "issues": "https://github.com/ised-isde-canada/remote-manage/issues",
-                "source": "https://github.com/ised-isde-canada/remote-manage/tree/1.0.3"
+                "source": "https://github.com/ised-isde-canada/remote-manage/tree/1.0.4"
             },
-            "time": "2020-09-30T16:48:44+00:00"
+            "time": "2021-02-03T17:36:37+00:00"
+        },
+        {
+            "name": "ised/cioetdm-modules",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
+                "reference": "master"
+            },
+            "type": "drupal-module"
         },
         {
             "name": "j7mbo/twitter-api-php",
