@@ -23,7 +23,7 @@
             "package": {
                 "name": "ised-isde/cioetdm-modules",
                 "version": "1.0",
-                "type": "package",
+                "type": "drupal-module",
                 "source": {
                     "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
                     "type": "git",
