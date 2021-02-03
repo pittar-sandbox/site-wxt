@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07bf334cf0869278d7cc2910ea564ced",
+    "content-hash": "9f6fbe2bde11f478cb2a48e954ad328c",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -260,16 +260,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.173.0",
+            "version": "3.173.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ab3ee1cba4219d5262ecac8f011f267e9b7f3af9"
+                "reference": "152c4869240ba809655fffedc28a5834e3d8615b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ab3ee1cba4219d5262ecac8f011f267e9b7f3af9",
-                "reference": "ab3ee1cba4219d5262ecac8f011f267e9b7f3af9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/152c4869240ba809655fffedc28a5834e3d8615b",
+                "reference": "152c4869240ba809655fffedc28a5834e3d8615b",
                 "shasum": ""
             },
             "require": {
@@ -344,9 +344,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.173.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.173.1"
             },
-            "time": "2021-02-02T20:01:31+00:00"
+            "time": "2021-02-03T19:15:23+00:00"
         },
         {
             "name": "bower-asset/cropper",
@@ -5172,7 +5172,7 @@
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.1.3",
+            "version": "9.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -5216,7 +5216,7 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.3"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.4"
             },
             "time": "2020-08-07T22:30:13+00:00"
         },
@@ -15105,18 +15105,19 @@
         },
         {
             "name": "ised-isde/epic_import",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ised-isde-canada/ciodrcoe-epic_import.git",
-                "reference": "5cffca49921ac781284cc4dc4b78b6e74e0e7528"
+                "reference": "d50a7b4930a61e7cf0be6059c58934b829f40360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-epic_import/zipball/5cffca49921ac781284cc4dc4b78b6e74e0e7528",
-                "reference": "5cffca49921ac781284cc4dc4b78b6e74e0e7528",
+                "url": "https://api.github.com/repos/ised-isde-canada/ciodrcoe-epic_import/zipball/d50a7b4930a61e7cf0be6059c58934b829f40360",
+                "reference": "d50a7b4930a61e7cf0be6059c58934b829f40360",
                 "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-module",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -15125,9 +15126,9 @@
             "description": "EPIC Import Module",
             "support": {
                 "issues": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/issues",
-                "source": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/tree/1.0.0"
+                "source": "https://github.com/ised-isde-canada/ciodrcoe-epic_import/tree/master"
             },
-            "time": "2021-01-29T18:57:44+00:00"
+            "time": "2021-02-03T20:26:18+00:00"
         },
         {
             "name": "ised-isde/remote-manage",
@@ -20575,7 +20576,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ised-isde/drupal-base": 20
+        "ised-isde/drupal-base": 20,
+        "ised-isde/epic_import": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
