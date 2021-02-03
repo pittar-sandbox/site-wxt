@@ -27,7 +27,7 @@ pipeline {
                             --optimize-autoloader \
                             --ignore-platform-reqs
                         
-                        ls -l vendor/ised-isde
+                        ls -l vendor/ised-isde/cioetdm-modules
                     """
                     builder.buildApp("${IMAGE_NAME}")
                 }
