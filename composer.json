@@ -19,7 +19,7 @@
             "url": "https://drupalwxt.github.io/composer-extdeps/"
         },
         {
-            "type": "package",
+            "type": "composer",
             "package": {
                 "name": "ised-isde/cioetdm-modules",
                 "version": "1.0",
