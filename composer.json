@@ -25,7 +25,7 @@
                 "version": "1.0",
                 "type": "drupal-module",
                 "source": {
-                    "url": "scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
+                    "url": "git@scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
                     "type": "git",
                     "reference": "master"
                 }
