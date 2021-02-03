@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "99ee2557cebaec8b86a5e9e9e2b448ce",
+    "content-hash": "07bf334cf0869278d7cc2910ea564ced",
     "packages": [
         {
             "name": "acquia/lightning",
@@ -15171,7 +15171,7 @@
             "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://scm.ised-isde.canada.ca:scm/drupal/cioetdm-modules.git",
+                "url": "https://scm.ised-isde.canada.ca/scm/drupal/cioetdm-modules.git",
                 "reference": "master"
             },
             "type": "drupal-module"
