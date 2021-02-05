@@ -1,11 +1,13 @@
 #!/usr/bin/env php
 <?php
 
-include_once 'html/sites/sites.php';
-
 chdir('/opt/app-root/src/html');
-foreach ($sites as $name) {
-  symlink('.', $name);
-}
-
 symlink('../vendor/ised-isde/remote-manage/rmanage.php', 'rmanage.php');
+
+// If this has a multisite configuration, create soft-links in the docroot
+if (file_exists('sites/sites.php')) {
+  include_once 'sites/sites.php';
+  foreach ($sites as $name) {
+    symlink('.', $name);
+  }
+}
