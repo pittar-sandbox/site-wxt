@@ -1,4 +1,4 @@
-FROM registry.apps.dev.ocp-dev.ised-isde.canada.ca/ised-ci/sclorg-s2i-php:7.3
+FROM image-registry.openshift-image-registry.svc:5000/drupal-wxt/sclorg-s2i-php:latest
 
 USER root
 
