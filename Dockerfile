@@ -8,7 +8,7 @@ ENV COMPOSER_FILE=composer-installer \
 RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
     php $COMPOSER_FILE --version=2.0.8
 
-RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
+RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-7-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
     install -y postgresql12 && \
     yum clean all
 
