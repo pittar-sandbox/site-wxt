@@ -9,7 +9,7 @@ RUN curl -s -o $COMPOSER_FILE https://getcomposer.org/installer && \
     php $COMPOSER_FILE --version=2.0.8
 
 RUN yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm && \
-    yum --disablerepo=rhel-8-for-x86_64-appstream-rpms install -y postgresql12 && \
+    install -y postgresql12 && \
     yum clean all
 
 COPY / /opt/app-root/src
