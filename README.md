@@ -26,6 +26,11 @@ export COMPOSER_MEMORY_LIMIT=-1 && composer install
 ./drush si wxt --db-url=pgsql://drupal:drupal@drupal-db/drupal --site-name=andrew --account-pass=password
 ```
 
+Or, from remote host using `oc` or `kubectl`
+```
+oc exec deployment/drupal-app -i -t -n drupalnamespace -- /opt/app-root/src/vendor/bin/drush si wxt --db-url=pgsql://drupal:drupal@drupal-db/drupal --site-name=andrew --account-pass=password --yes
+```
+
 ## Dependencies
 
 The `composer.json` file calls the following dependencies:
