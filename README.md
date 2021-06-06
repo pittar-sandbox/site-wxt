@@ -20,6 +20,12 @@ Normally you can simply run a `composer install` but at the moment you might nee
 export COMPOSER_MEMORY_LIMIT=-1 && composer install
 ```
 
+## Install with Drush
+
+```
+./drush si wxt --db-url=pgsql://drupal:drupal@drupal-db/drupal --site-name=andrew --account-pass=password
+```
+
 ## Dependencies
 
 The `composer.json` file calls the following dependencies:
