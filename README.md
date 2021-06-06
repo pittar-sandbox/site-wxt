@@ -23,6 +23,12 @@ export COMPOSER_MEMORY_LIMIT=-1 && composer install
 ## Install with Drush
 
 ```
+Image puller:
+
+oc adm policy add-role-to-user sytem:image-puller -z default -n drupal-wxt
+```
+
+```
 ./drush si wxt --db-url=pgsql://drupal:drupal@drupal-db/drupal --site-name=andrew --account-pass=password
 ```
 
